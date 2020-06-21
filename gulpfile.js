@@ -3,10 +3,10 @@ var gulp = require("gulp")
 
 
 gulp.task('stylus', function () {
-    gulp.watch('prepros/stylus/**/*.styl', {ignoreInitial : false}, function (css) {
-        gulp.src("prepros/stylus/index.styl")
+    gulp.watch('Archivo a ver', {ignoreInitial : false}, function (css) {
+        gulp.src("Archivo a Compilar")
         .pipe(stylus())
-        .pipe(gulp.dest("css"))
+        .pipe(gulp.dest("carpeta en donde se va a compilar"))
         css()
     });
 });
